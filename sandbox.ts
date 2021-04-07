@@ -1,16 +1,27 @@
-let character = 'mario';
-let age = 30;
-let isBlackBelt = false;
+// Arrays and Objects 4-lesson
 
-character = 'luige';
+// arrays
+let names = ['luige', 'mario', 'yoshi'];
 
-age = 40;
+names.push('toad');
+// names.push(3);
+// names[0] = 3;
 
-// isBlackBelt = 'yes';
-isBlackBelt = true;
+let numbers = [10, 20, 30, 40];
 
-const circ = (diameter: number) => {
-    return diameter * Math.PI;
+numbers.push(3);
+// numbers.push('shaun');
+// numbers[1] = 'shaun';
+
+let mixed = ['ken', 4, 'chun', 8, 9];
+mixed.push('ray');
+mixed.push(10);
+
+mixed[0] = 3;
+
+// objects
+let person = {
+    name: 'John',
+    belt: 'black',
+    age: 25
 }
-
-console.log(circ(1.5));
