@@ -1,27 +1,47 @@
-// Arrays and Objects 4-lesson
+// explicit types
+let character: string;
+let age: number;
+let isLoggedIn: boolean;
+
+// age = 'luige';
+age = 25;
+
+// isLoggedIn = 25
+isLoggedIn = true;
 
 // arrays
-let names = ['luige', 'mario', 'yoshi'];
+let ninja: string[] = [];
 
-names.push('toad');
-// names.push(3);
-// names[0] = 3;
+ninja.push('john')
 
-let numbers = [10, 20, 30, 40];
 
-numbers.push(3);
-// numbers.push('shaun');
-// numbers[1] = 'shaun';
+// union types
+let mixed: (string | number | boolean)[] = [];
+mixed.push('hello');
+mixed.push(20);
+mixed.push(false);
+console.log(mixed);
 
-let mixed = ['ken', 4, 'chun', 8, 9];
-mixed.push('ray');
-mixed.push(10);
-
-mixed[0] = 3;
+let uid: string | number;
+uid = '123';
+uid = 1234;
 
 // objects
-let person = {
+let person1: Object;
+
+person1 = {
     name: 'John',
-    belt: 'black',
     age: 25
+}
+
+let person2: {
+    name: string,
+    age: number,
+    beltColor: string
+};
+
+person2 = {
+    name: 'John',
+    age: 25,
+    beltColor: 'black'
 }
